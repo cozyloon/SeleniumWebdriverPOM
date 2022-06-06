@@ -44,7 +44,7 @@
                 <configuration>
                     <systemPropertyVariables>
                         <propertyName>
-                            <browser>%{Browser}%</browser>
+                            <browser>${Browser}</browser>
                         </propertyName>
 
                     </systemPropertyVariables>
