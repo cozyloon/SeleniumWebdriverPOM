@@ -11,8 +11,8 @@ public class TestBase {
     protected static SoftAssert softAssert = new SoftAssert();
     protected static Logger logger = Logger.getAnonymousLogger();
 
-    @Parameters("Browser")
     @BeforeSuite
+    @Parameters("Browser")
     public void beforeSuite(String browser) {
         DriverSetup.launchDriver(browser);
     }
