@@ -17,15 +17,6 @@ public class DriverSetup {
 
 
     public static void launchDriver(String browser) {
-        try (InputStream input = DriverSetup.class.getClassLoader().getResourceAsStream("config.properties")) {
-
-            Properties prop = new Properties();
-            prop.load(input);
-            prop.getProperty("browser");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
         if (browser.contains("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
