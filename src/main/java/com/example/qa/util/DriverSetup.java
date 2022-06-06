@@ -17,16 +17,17 @@ public class DriverSetup {
 
 
     public static void launchDriver(String browser) {
-        if (browser.contains("chrome")) {
+
+        if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         }
 
-        if (browser.contains("firefox")) {
+        if (browser.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         }
-        if (browser.contains("edge")) {
+        if (browser.equalsIgnoreCase("edge")) {
             WebDriverManager.edgedriver().setup();
             driver = new EdgeDriver();
         }

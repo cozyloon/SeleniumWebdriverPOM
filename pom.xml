@@ -12,6 +12,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+
     </properties>
 
     <dependencies>
@@ -43,15 +44,15 @@
                 <version>3.0.0-M6</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <propertyName>
-                            <browser>${Browser}</browser>
-                        </propertyName>
+
+                        <browser>${Browser}</browser>
 
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 
 
 

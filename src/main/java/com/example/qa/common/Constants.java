@@ -1,7 +1,8 @@
 package com.example.qa.common;
 
 public class Constants {
-    public final static String APP_URL =System.getProperty("app.url");
+    public final static String APP_URL ="https://opensource-demo.orangehrmlive.com/index.php/auth/login";
+    //public final static String BROWSER=System.getProperty("browser","chrome");
     public final static String VALID_USERNAME="Admin";
     public final static String VALID_PASSWORD="admin123";
     public final static String INVALID_USERNAME="admin";
