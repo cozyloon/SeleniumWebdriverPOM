@@ -3,14 +3,22 @@ package com.example.qa.tests;
 import com.example.qa.common.Constants;
 import com.example.qa.functions.Login;
 import com.example.qa.util.TestBase;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import static com.example.qa.common.ResponseData.*;
+import static com.example.qa.util.DriverSetup.driver;
 
 public class LoginTest extends TestBase {
 
+
     @Test(description = "", alwaysRun = true, priority = 1)
     public void testLoginPageValidate() {
+
         softAssert.assertTrue(Login.validateLoginPageIsDisplayed(), "Login page not reached!");
         softAssert.assertAll();
     }
